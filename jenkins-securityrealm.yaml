@@ -1,0 +1,22 @@
+jenkins:
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "admin"
+        password: "${admin}"
+        properties:
+        - preferredProvider:
+            providerId: "default"
+        - mailer:
+            emailAddress: "admin@jenkins.com"
+      - id: "user-x"
+        name: "user-x"
+        password: "${user}"
+        properties:
+        - preferredProvider:
+            providerId: "default"
+        - mailer:
+            emailAddress: "user-x@jenkins.com"
