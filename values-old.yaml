@@ -1,7 +1,0 @@
-controller:
- serviceType: "LoadBalancer"
- servicePort: 80
- adminSecret: false
- additionalPlugins:
- - "role-strategy:3.0"
- - "docker-workflow-plugin:latest"
